@@ -1,0 +1,152 @@
+
+  body {
+    font-family: "Roboto", sans-serif;
+    user-select: none;
+  }
+  .main{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  }
+  .cont{
+    width: 350px;
+    height: 350px;
+    text-align: center;
+    
+  }
+  .head{
+    font-size: 65px;
+    margin: 30px 0 20px 0;
+    color: #2B3467;
+  }
+  .choose h2{
+    font-size: 25px;
+    color: #FFBF00;
+  }
+  
+  .players{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 20px 0 80px;
+  }
+  .x,.o,.play{
+    padding: 5px 50px;
+    width: fit-content;
+    font-size: 1.2em;
+    border-radius: 10px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: .3s;
+  }
+  .x{
+    border:1px solid #FF1E00;
+    color: #FF1E00;
+  }
+  .x.active,.x:hover{
+    background-color: #FF1E00;
+    color: white;
+  }
+  .o{
+    border:1px solid #379237;
+    color: #379237;
+  }
+  .o.active,.o:hover{
+    background-color: #379237;
+    color: white;
+  }
+  .play{
+    border:1px solid #0078AA;
+    color: #0078AA;
+    margin: auto;
+  }
+  .play:hover{
+    background-color: #0078AA;
+    color: white;
+  }
+
+  .unclickable{
+    cursor: not-allowed;
+    opacity: .5;
+
+  }
+  .hide{
+    display: none;
+}
+
+.gameover{
+    position: absolute;
+    width: 350px;
+    height: 350px;
+    background-color: rgba(0, 0, 0, 0.95);
+}
+.gameover h1{
+    text-align: center;
+    font-size: 50px;
+    color: #fff;
+    margin: 40px 0 20px 0;
+}
+
+
+
+
+
+
+
+.cell{
+  width: 75px;
+  height: 75px;
+  border: 2px solid;
+  box-shadow: 0 0 0 2px;
+  line-height: 75px;
+  font-size: 50px;
+  cursor: pointer;
+}
+#gameContainer{
+  width: 350px;
+  min-height: 350px;
+  text-align: center;
+}
+#cellContainer{
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  width: 225px;
+  margin: auto;
+}
+#restartBtn{
+  display: block;
+  padding: 5px 50px;
+    width: fit-content;
+    font-size: 1.2em;
+    border-radius: 10px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: .3s;
+    margin: 5px auto;
+    color: #850000;
+    border: 1px solid #850000;
+}
+#restartBtn:hover{
+  background-color: #850000;
+  color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
